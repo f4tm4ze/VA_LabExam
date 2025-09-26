@@ -62,14 +62,8 @@ if($_POST){
         </div>
     </section>
 
-    <footer>
-        <div class="container">
-            <div class="footer-content">
-                <p>&copy; 2023 University of Mindanao Intramurals. All rights reserved.</p>
-                <p>Contact: intramurals@umindanao.edu.ph | Phone: (082) 123-4567</p>
-            </div>
-        </div>
-    </footer>
+    <?php include 'footer.php'; ?>
     <script src="script.js"></script>
 </body>
+
 </html>
