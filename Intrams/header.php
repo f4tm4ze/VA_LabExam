@@ -23,8 +23,8 @@ echo "<!-- DEBUG: username = " . (isset($_SESSION['username']) ? $_SESSION['user
         <div class="logo">
             <img src="UM.png" alt="University of Mindanao Logo" class="logo-img">
             <div class="logo-text">
-                <h1>UM Intramurals 2025</h1>
-                <span class="logo-subtitle">University of Mindanao</span>
+                <h1>University of Mindanao</h1>
+                <span class="logo-subtitle">UM Intramurals 2025</span>
             </div>
         </div>
             <div class="hamburger" id="hamburger">☰</div>
