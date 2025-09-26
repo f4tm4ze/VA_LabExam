@@ -21,7 +21,12 @@ echo "<!-- DEBUG: username = " . (isset($_SESSION['username']) ? $_SESSION['user
     <nav>
         <div class="container nav-container">
             <div class="logo">
-                <h1>UM Intramurals 2025</h1>
+                <a href="index.php" class="brand-link" aria-label="UM Intramurals 2025">
+                    <img
+                    src="UM.png"
+                    alt="UM Intramurals 2025" class="brand-mark">
+                </a>
+                <span class="sr-only">UM Intramurals 2025</span>
             </div>
             <div class="hamburger" id="hamburger">☰</div>
             <ul class="nav-links" id="navLinks">
