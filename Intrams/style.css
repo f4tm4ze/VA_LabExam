@@ -664,7 +664,7 @@ footer {
 .btn-grid {
     display: grid;
     gap: 1rem;
-    grid-template-columns: 1fr 1fr; /* Two equal columns */
+    grid-template-columns: 1fr 1fr; 
     max-width: 400px;
     margin: 0 auto;
 }
@@ -677,6 +677,69 @@ footer {
     }
 }
 .about-text p {
-  margin-bottom: 1rem; /* adds space between paragraphs */
-  line-height: 1.6;    /* improves readability */
+  margin-bottom: 1rem; 
+  line-height: 1.6;   
+}
+
+/* Logo Styles */
+.logo {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+}
+
+.logo-img {
+    height: 50px; 
+    width: auto;
+    object-fit: contain;
+}
+
+.logo-text {
+    display: flex;
+    flex-direction: column;
+}
+
+.logo-text h1 {
+    color: var(--white);
+    font-size: 1.5rem;
+    margin: 0;
+    line-height: 1.2;
+}
+
+.logo-subtitle {
+    color: var(--gold);
+    font-size: 0.8rem;
+    font-weight: 500;
+    margin: 0;
+}
+
+@media (max-width: 768px) {
+    .logo-img {
+        height: 40px; 
+    }
+    
+    .logo-text h1 {
+        font-size: 1.2rem;
+    }
+    
+    .logo-subtitle {
+        font-size: 0.7rem;
+    }
+}
+
+.logo-simple {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+}
+
+.logo-simple img {
+    height: 45px;
+    width: auto;
+}
+
+.logo-simple h1 {
+    color: var(--white);
+    font-size: 1.3rem;
+    margin: 0;
 }
