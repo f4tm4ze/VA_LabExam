@@ -18,11 +18,15 @@ echo "<!-- DEBUG: username = " . (isset($_SESSION['username']) ? $_SESSION['user
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <nav>
-        <div class="container nav-container">
-            <div class="logo">
+   <nav>
+    <div class="container nav-container">
+        <div class="logo">
+            <img src="UM.png" alt="University of Mindanao Logo" class="logo-img">
+            <div class="logo-text">
                 <h1>UM Intramurals 2025</h1>
+                <span class="logo-subtitle">University of Mindanao</span>
             </div>
+        </div>
             <div class="hamburger" id="hamburger">☰</div>
             <ul class="nav-links" id="navLinks">
                 <li><a href="index.php" class="nav-link <?php echo basename($_SERVER['PHP_SELF']) == 'index.php' ? 'active' : ''; ?>">Home</a></li>
