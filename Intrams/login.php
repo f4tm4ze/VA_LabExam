@@ -31,39 +31,35 @@ if($_POST){
 
 <?php include 'header.php'; ?>
 
-    <section style="padding: 4rem 0;">
-        <div class="container">
-            <h2 class="section-title">Login to Your Account</h2>
-            <div class="form-container">
-                <?php if($error): ?>
-                    <div class="alert alert-error"><?php echo $error; ?></div>
-                <?php endif; ?>
-                
-                <form id="loginForm" method="POST">
-                    <div class="form-group">
-                        <label for="loginUsername">Username</label>
-                        <input type="text" id="loginUsername" name="username" required>
-                        <div class="error" id="loginUsernameError">Username is required</div>
+<section style="padding: 4rem 0;">
+    <div class="container">
+        <h2 class="section-title">Login to Your Account</h2>
+        <div class="form-container">
+            <?php if($error): ?>
+                <div class="alert alert-error"><?php echo $error; ?></div>
+            <?php endif; ?>
+            
+            <form id="loginForm" method="POST">
+                <div class="form-group">
+                    <label for="loginUsername">Username</label>
+                    <input type="text" id="loginUsername" name="username" required>
+                    <div class="error" id="loginUsernameError">Username is required</div>
+                </div>
+                <div class="form-group">
+                    <label for="loginPassword">Password</label>
+                    <div class="password-wrapper">
+                        <input type="password" id="loginPassword" name="password" required>
+                        <button type="button" class="password-toggle" onclick="togglePassword('loginPassword', this)">
+                            <i class="fas fa-eye-slash"></i>
+                        </button>
                     </div>
-                    <div class="form-group">
-                         <label for="loginPassword">Password</label>
-                         <div class="password-wrapper">
-                         <input type="password" id="loginPassword" name="password" required>
-                          <button type="button" class="password-toggle">
-                        <i class="fas fa-eye-slash"></i>
-                    </button>
-                     </div>
-                          <div class="error" id="loginPasswordError">Password is required</div>
-                    </div>
-                    <button type="submit" class="btn" style="width: 100%;">Login</button>
-                </form>
-                <p style="text-align: center; margin-top: 1rem;">Don't have an account? <a href="register.php">Register here</a></p>
-            </div>
+                    <div class="error" id="loginPasswordError">Password is required</div>
+                </div>
+                <button type="submit" class="btn" style="width: 100%;">Login</button>
+            </form>
+            <p style="text-align: center; margin-top: 1rem;">Don't have an account? <a href="register.php">Register here</a></p>
         </div>
-    </section>
+    </div>
+</section>
 
-    <?php include 'footer.php'; ?>
-    <script src="script.js"></script>
-</body>
-
-</html>
+<?php include 'footer.php'; ?>
